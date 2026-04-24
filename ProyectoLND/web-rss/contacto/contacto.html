@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World - Inicio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <header class="anime-header">
+        <div class="logo">
+            <img src="../images/Logo anime.png" alt="Anime World Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="../podcast/index.html">Podcast</a></li>
+                <li><a href="../contacto/contacto.html">Contacto</a></li>
+                <li><a href="../servicios/servicios.html">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contacto-anime">
+        <h1>Contacto Anime</h1>
+        <form class="form-anime">
+            <!-- Texto -->
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+
+            <!-- Correo -->
+            <label>Correo:</label>
+            <input type="email" name="correo" required>
+
+            <!-- Select -->
+            <label>Anime favorito:</label>
+            <select name="anime">
+                <option>Naruto</option>
+                <option>One Piece</option>
+                <option>Attack on Titan</option>
+                <option>Demon Slayer</option>
+            </select>
+
+            <!-- Radio -->
+            <div class="grupo">
+                <label>Formato preferido:</label>
+                <label><input type="radio" name="formato"> Serie</label>
+                <label><input type="radio" name="formato"> Película</label>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="grupo">
+                <label>Géneros favoritos:</label>
+                <label><input type="checkbox"> Acción</label>
+                <label><input type="checkbox"> Romance</label>
+                <label><input type="checkbox"> Fantasía</label>
+            </div>
+
+            <!-- Botón -->
+            <button type="submit">Enviar</button>
+            <!-- Javascript -->
+            <form onsubmit="return validarFormulario()"></form>
+        </form>
+
+    </div>

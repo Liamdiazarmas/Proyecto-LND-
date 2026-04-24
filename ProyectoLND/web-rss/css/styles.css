@@ -1,0 +1,723 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    background-image: url('../images/bg-pattern.png');
+}
+
+/* Estilo del encabezado */
+.anime-header {
+    background: linear-gradient(to right, #ff4e50, #f9d423);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.logo img {
+    height: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Estilo del héroe */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #ff4e50;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Estilo de las publicaciones */
+.latest-posts {
+    padding: 0 1rem 2rem;
+}
+
+.latest-posts h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.post-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.post-card h3 {
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+
+.post-card h3 a {
+    color: #ff4e50;
+    text-decoration: none;
+}
+
+.post-card p {
+    padding: 0 1rem 1rem;
+    color: #666;
+}
+
+/* Estilo del pie de página */
+.anime-footer {
+    background: linear-gradient(to right, #333, #555);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* Efectos especiales */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.hero-image img:hover {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Estilos para el blog */
+.blog-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-description {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.article-summary {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.article-summary:hover {
+    transform: translateY(-3px);
+}
+
+.article-summary h2 {
+    color: #ff4e50;
+    margin-bottom: 0.5rem;
+}
+
+.article-summary h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.article-meta {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.article-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.article-excerpt {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    display: inline-block;
+    background: #ff4e50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #e03c3e;
+}
+
+/* Estilos para el podcast */
+.podcast-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.podcast-description {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.episode-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.episode {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.episode h2 {
+    color: #ff4e50;
+    margin-bottom: 0.5rem;
+}
+
+.episode-meta {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.episode-description {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.episode-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.episode-links a {
+    color: #ff4e50;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.episode-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el pie de página mejorado */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    transition: border-color 0.3s;
+}
+
+.footer-links a:hover {
+    border-bottom-color: white;
+}
+/* Estilos específicos del blog */
+.blog-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.blog-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.article-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.article-summary {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.article-summary:hover {
+    transform: translateY(-5px);
+}
+
+.article-image {
+    flex: 0 0 300px;
+}
+
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-content {
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.article-summary h2 {
+    margin: 0 0 0.5rem;
+    color: #ff4e50;
+}
+
+.article-summary h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.article-meta {
+    color: #888;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.article-excerpt {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    display: inline-block;
+    color: #ff4e50;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .article-summary {
+        flex-direction: column;
+    }
+    
+    .article-image {
+        flex: 0 0 200px;
+    }
+}
+
+.contacto-anime {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.contacto-anime h1 {
+    text-align: center;
+}
+
+.form-anime label {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-anime input,
+.form-anime select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.grupo {
+    margin-top: 10px;
+}
+
+.grupo label {
+    display: block;
+    margin-top: 5px;
+}
+
+.form-anime button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Página Servicios */
+
+/* MENÚ */
+.nav-anime ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.nav-anime a {
+    text-decoration: none;
+    color: white;
+    background: #222;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+/* CONTENEDOR */
+.servicios-anime {
+    padding: 20px;
+}
+
+/* PORTFOLIO */
+.grid-portfolio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: #111;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* CARRUSEL */
+.carrusel {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slides {
+    display: flex;
+    animation: mover 9s infinite;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Animación */
+@keyframes mover {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .grid-portfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Móvil */
+@media screen and (max-width: 480px) {
+    .grid-portfolio {
+        grid-template-columns: 1fr;
+    }
+
+    .slide img {
+        height: 200px;
+    }
+}
+
+.oscuro {
+    background-color: black;
+    color: white;
+}
+
+/* ========================= */
+/* CONTENEDOR PRINCIPAL */
+/* ========================= */
+.post-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Caja del post */
+.full-post {
+    max-width: 900px;
+    background: #1a1a2e;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* ========================= */
+/* TITULOS */
+/* ========================= */
+.full-post h1 {
+    text-align: center;
+    color: #ff4da6;
+}
+
+.full-post h2 {
+    margin-top: 20px;
+    color: #00c3ff;
+}
+
+.full-post h3 {
+    margin-top: 15px;
+    color: #ffd166;
+}
+
+/* ========================= */
+/* META INFO */
+/* ========================= */
+.post-meta {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.author {
+    color: #ff4da6;
+}
+
+/* ========================= */
+/* CONTENIDO */
+/* ========================= */
+.full-post p {
+    line-height: 1.6;
+}
+
+.full-post ul {
+    margin-left: 20px;
+}
+
+/* ========================= */
+/* IMAGEN PRINCIPAL */
+/* ========================= */
+.interview-photo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* ========================= */
+/* BLOQUE ENTREVISTA */
+/* ========================= */
+.interview-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.interview-text {
+    flex: 1;
+}
+
+/* ========================= */
+/* CITA */
+/* ========================= */
+blockquote {
+    background: #16213e;
+    padding: 15px;
+    border-left: 4px solid #ff4da6;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* ========================= */
+/* GALERÍA */
+/* ========================= */
+.character-gallery {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.character-gallery img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* ========================= */
+/* VIDEO */
+/* ========================= */
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.video-caption {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ========================= */
+/* MEDIA QUERIES */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .interview-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .full-post {
+        padding: 20px;
+    }
+}
+
+/* Móvil */
+@media (max-width: 480px) {
+    .full-post {
+        padding: 15px;
+    }
+
+    .character-gallery img {
+        width: 100px;
+    }
+}
+
+/* imagen post 1 */
+.featured-image {
+    width: 100%;
+    max-width: 700px;   
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    object-fit: cover;
+}

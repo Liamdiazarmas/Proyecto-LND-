@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header class="anime-header">
+        <div class="logo">
+            <img src="images/Logo anime.png" alt="Anime World Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="podcast/index.html">Podcast</a></li>
+                <li><a href="../web-rss/contacto/contacto.html">Contacto</a></li>
+                <li><a href="../web-rss/servicios/servicios.html">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Bienvenido a Anime World</h1>
+            <p>El mejor lugar para noticias, reseñas y discusiones sobre anime</p>
+            <div class="hero-image">
+                <img src="images/Personajes anime.webp" alt="Personajes de anime populares">
+            </div>
+        </section>
+
+        <section class="latest-posts">
+            <h2>Últimas Publicaciones</h2>
+            <div class="post-grid">
+                <article class="post-card">
+                    <img src="images/Solo leveling miniatura 1.webp" alt="Miniatura post 1">
+                    <h3><a href="/ProyectoLND/web-rss/blog/post/post1.html">El mejor anime de la temporada</a></h3>
+                    <p>Descubre el anime que sigue rompiendo internet.</p>
+                </article>
+                <article class="post-card">
+                    <img src="images/Guia anime.jpg" alt="Miniatura post 2">
+                    <h3><a href="/ProyectoLND/web-rss/blog/post/post2.html">Guía para principiantes del anime</a></h3>
+                    <p>¿Nuevo en el mundo del anime? Esta guía es para ti...</p>
+                </article>
+                <article class="post-card">
+                    <img src="images/Seiyuus anime.jpg" alt="Miniatura post 3">
+                    <h3><a href="/ProyectoLND/web-rss/blog/post/post3.html">Entrevista con un seiyuu famoso</a></h3>
+                    <p>Conoce al actor de voz detrás de tus personajes favoritos...</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="anime-footer">
+        <p>© 2026 Anime World - Todos los derechos reservados</p>
+        <div class="footer-links"><br>
+            <a href="https://www.instagram.com/">Canal de Instagram</a>
+            <a href="https://www.youtube.com/">Canal de YouTube</a>
+            <a href="https://x.com/?lang=es">Canal de Twitter</a>
+            <br>
+            <!-- Javascript -->
+            <p>Autor: Liam Díaz Armas</p>
+            <button onclick="saludo()">Saludar</button>
+            <button onclick="mostrarHora()">Ver hora</button>
+            <p id="hora"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
