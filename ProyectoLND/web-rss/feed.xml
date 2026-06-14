@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Anime World</title>
+        <link>https://github.com/Liamdiazarmas/Proyecto-LND-/tree/main/ProyectoLND/web-rss/</link>
+        <description>Noticias y reseñas sobre anime</description>
+
+        <item>
+            <title>El mejor anime de la temporada de invierno 2024</title>
+            <link>https://github.com/Liamdiazarmas/Proyecto-LND-/blob/main/ProyectoLND/web-rss/blog/post/post1.html</link>
+            <description>Solo Leveling llega a la pantalla y arrasa. Descubre por qué es el fenómeno de la temporada.</description>
+            <pubDate>Sun, 07 Jan 2024 10:00:00 +0000</pubDate>
+        </item>
+
+        <item>
+            <title>Guía definitiva para principiantes del anime</title>
+            <link>https://github.com/Liamdiazarmas/Proyecto-LND-/blob/main/ProyectoLND/web-rss/blog/post/post2.html</link>
+            <description>¿Nuevo en el mundo del anime? Esta guía te explica por dónde empezar y qué plataformas usar.</description>
+            <pubDate>Thu, 12 Oct 2023 09:00:00 +0000</pubDate>
+        </item>
+
+    </channel>
+</rss>
